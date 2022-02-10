@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/images/background.jpg");
+  background-color: black;
+  background-position: center;
+  background-size: cover
+}
+.header {
+  color: white;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-bottom: 1px solid #C9C9C9;
+}
+.play-area {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+.deck {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.deck img {
+  height: 200px;
+}
+#dealer-hand img,
+#player-hand img {
+  height: 100px;
+  margin: 10px;
+}
+#dealer-hand,
+#player-hand {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dealer h3,
+.player h3 {
+  margin-top: 20px;
+}
+.button-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #C9C9C9;
+  border-radius: 5px;
+}
+button {
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.footer {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: #212121;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+a, a:hover, a:active, a:visited {
+  line-height: 2;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #C4C4C4;
+}
+a:active {
+  color: #858585;
+}
+
+#message {
+  font-size: 20px;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 551px) and (max-width: 760px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  .dealer {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    margin: auto;
+  }
+  .deck {
+    align-self: center;
+  }
+  .dealer-play {
+    width: 100%;
+  }
+  .player {
+    width: 80%;
+    margin: auto;
+  }
+  #message {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 761px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  .dealer {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: auto;
+  }
+  .deck {
+    align-self: center;
+  }
+  .dealer-play {
+    width: 100%;
+  }
+  .player {
+    width: 60%;
+    margin: auto;
+  }
+  .button-bar {
+    justify-content: flex-start;
+  }
+  button {
+    margin-right: 20px;
+  }
+  #message {
+    width: 40%;
+  }
+}
